@@ -19,3 +19,7 @@ def calculate_profit_margin(
     if revenue == 0:
         return 0.0
     return (net_income / revenue) * 100
+
+CALCULATION_TOOLS = [
+    calculate_profit_margin
+]
