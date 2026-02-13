@@ -8,7 +8,7 @@ class CompanyMetrics(TypedDict):
     company_name: str
     revenue: Optional[float]
     net_income: Optional[float]
-    eps: Optional[float]
+    profit_margin: Optional[float]
 
 
 class AgentState(TypedDict):
