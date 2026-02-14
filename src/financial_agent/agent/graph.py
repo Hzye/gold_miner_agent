@@ -23,7 +23,7 @@ def create_financial_agent():
     # edges
     workflow.set_entry_point("parse_pdf")
     workflow.add_edge("parse_pdf", "extract_metrics")
-    workflow.add_edge("extract_metrics", "generate_comparison_node")
+    workflow.add_edge("extract_metrics", "calculate_metrics")
 
     # conditional edge
     workflow.add_conditional_edges(
